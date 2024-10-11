@@ -7,7 +7,8 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: Install dependesis
-        run: npm ci
+        run: npm cigit pull origin main
+
       - name: Lint
         run: npm run lint 
       - name: Build code
